@@ -37,7 +37,7 @@ setInterval(function() {
     'temperature': readout.temperature.toFixed(1)
   });
 
-  client.publish("test-topic-handson/teo", postData);
+  client.publish("test-topic-handson/temperature", postData);
 
 
   const options = {
