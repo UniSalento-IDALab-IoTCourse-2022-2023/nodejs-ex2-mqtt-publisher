@@ -3,7 +3,7 @@ const sensorLib = require('node-dht-sensor'); // include existing module called 
 const http = require('http');
 const mqtt=require('mqtt');
 
-var client = mqtt.connect("mqtt.eclipseprojects.io",{clientId:"mqttjs01"});
+var client = mqtt.connect("mqtt://mqtt.eclipseprojects.io",{clientId:"mqttjs01"});
 client.on("connect",function(){
   console.log("connected");
 });
